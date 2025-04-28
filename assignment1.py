@@ -2,7 +2,7 @@ class Smartphone:
     def __init__(self, brand, model, battery_level):
         self.brand = brand
         self.model = model
-        self.__battery_level = battery_level  # Encapsulated variable
+        self.__battery_level = battery_level
 
     def turn_on(self):
         print(f"{self.model} is now ON!")
@@ -17,7 +17,7 @@ class Smartphone:
     def check_battery(self):
         print(f"Battery level of {self.model}: {self.__battery_level}%")
 
-class SmartphoneWithCamera(Smartphone):  # Inheritance from Smartphone
+class SmartphoneWithCamera(Smartphone):
     def __init__(self, brand, model, battery_level, camera_quality):
         super().__init__(brand, model, battery_level)
         self.camera_quality = camera_quality
